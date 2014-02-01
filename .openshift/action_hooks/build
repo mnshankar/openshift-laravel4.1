@@ -6,5 +6,10 @@ else
 	php $OPENSHIFT_DATA_DIR/composer.phar self-update;
 fi
 
-cd $OPENSHIFT_REPO_DIR/laravel; php $OPENSHIFT_DATA_DIR/composer.phar install;
+cd $OPENSHIFT_REPO_DIR/laravel;
+export HOME_ORIGIN=$HOME;
+export HOME=$OPENSHIFT_REPO_DIR;
 
+php $OPENSHIFT_DATA_DIR/composer.phar install;
+
+export HOME=$HOME_ORIGIN;
