@@ -26,7 +26,7 @@ How to use
 1. Log into your Openshift account
 2. Under the "Applications tab", click on "New Application"
 3. Select PHP 5.3 cartridge (or php 5.3 with Zend Server)
-4. In the source code field, put in the address of this repository (https://github.com/mnshankar/openshift-laravel4.1)
+4. In the source code field, put in the address of this repository (https://github.com/mnshankar/openshift-laravel)
 5. Click on "Create Application"
 6. Once your app is started, click on its url and you should see the Laravel welcome page!
 
