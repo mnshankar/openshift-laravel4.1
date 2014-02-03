@@ -3,17 +3,15 @@ Openshift-Laravel
 
 Use this repo to instantly create a Laravel 4.1 application on Openshift (https://www.openshift.com/)
 
-Why Openshift is awesome for Laravel applications
--------------------------------------------------
-1. Free Paas hosting for trying out most small to mid range applications
+Why Openshift is awesome for Laravel
+------------------------------------
+1. Free PaaS hosting for trying out code
 2. Git push support
 3. Full ssh access
 4. Ability to schedule cron jobs and setup deploy hooks
-5. Easy to scale up should you decide to upgrade
+5. Easy to scale up
 
-All in all, I am quite impressed by this offering and highly recommend it.
-
-This repository will help you clone the latest laravel version on to your openshift gear with almost zero effort! It takes care of all the minutae involved in setup:
+This repository will help you clone laravel 4.1 to your openshift gear with almost zero effort! It takes care of all the minutae involved in setup:
 
 1. requirement of php directory (using symlink)
 2. Composer installation (via hooks)
