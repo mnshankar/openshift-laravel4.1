@@ -40,17 +40,17 @@ git clone ssh://52ebddf14rtrec862e000040@php-mnshankar.rhcloud.com/~/git/php.git
 
 Remember
 --------
- The repo dir gets overwritten/refreshed *EVERY* time you do a git push.
- Whenever you do a git push, composer repositories are (re) installed.
- It is generally a bad idea to log into your gear via ssh and make code changes in your repo (as they will get wiped out during the next push!).
- If you want something to remain between pushes, place them in the OPENSHIFT_DATA_DIR.
- Composer install is time consuming, To prevent openshift from killing off the install task, a "process-timeout" config option has been set in composer.json.
+1. The repo dir gets overwritten/refreshed *EVERY* time you do a git push.
+2. Whenever you do a git push, composer repositories are (re) installed.
+3. It is generally a bad idea to log into your gear via ssh and make code changes in your repo (as they will get wiped out during the next push!).
+4. If you want something to remain between pushes, place them in the OPENSHIFT_DATA_DIR.
+5. Composer install is time consuming, To prevent openshift from killing off the install task, a "process-timeout" config option has been set in composer.json.
 
 
 Credits
 -------
 This repo borrows ideas from:
-https://github.com/Fale/openshift-laravel4-quickstart
-http://openshift.github.io/documentation/oo_user_guide.html
-http://stackoverflow.com/questions/18094005/update-composer-phar-on-openshift
+1. https://github.com/Fale/openshift-laravel4-quickstart
+2. http://openshift.github.io/documentation/oo_user_guide.html
+3. http://stackoverflow.com/questions/18094005/update-composer-phar-on-openshift
 
