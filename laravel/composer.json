@@ -30,7 +30,8 @@
 		]
 	},
 	"config": {
-		"preferred-install": "dist"
+		"preferred-install": "dist",
+		"process-timeout": 3000
 	},
 	"minimum-stability": "stable"
 }

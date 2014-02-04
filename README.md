@@ -7,8 +7,8 @@ Why Openshift is awesome for Laravel
 ------------------------------------
 1. Free PaaS hosting for trying out code
 2. Git push support
-3. Full ssh access
-4. Ability to schedule cron jobs and setup deploy hooks
+3. Full ssh access - great for running artisan commands 
+4. Ability to schedule cron jobs and setup hooks
 5. Easy to scale up
 
 This repository will help you clone laravel 4.1 to your openshift gear with almost zero effort! It takes care of all the minutae involved in setup:
@@ -38,6 +38,19 @@ NOTE
 git clone ssh://52ebddf14rtrec862e000040@php-mnshankar.rhcloud.com/~/git/php.git/
 ```
 
+Remember
+--------
+ The repo dir gets overwritten/refreshed *EVERY* time you do a git push.
+ Whenever you do a git push, composer repositories are (re) installed.
+ It is generally a bad idea to log into your gear via ssh and make code changes in your repo (as they will get wiped out during the next push!).
+ If you want something to remain between pushes, place them in the OPENSHIFT_DATA_DIR.
+ Composer install is time consuming, To prevent openshift from killing off the install task, a "process-timeout" config option has been set in composer.json.
+
+
 Credits
 -------
-This repo is based on https://github.com/Fale/openshift-laravel4-quickstart
+This repo borrows ideas from:
+https://github.com/Fale/openshift-laravel4-quickstart
+http://openshift.github.io/documentation/oo_user_guide.html
+http://stackoverflow.com/questions/18094005/update-composer-phar-on-openshift
+
